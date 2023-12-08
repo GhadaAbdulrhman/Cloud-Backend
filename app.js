@@ -13,10 +13,10 @@ dotenv.config({
   path: "./config/.env",
 });
 
-const PORT = process.env.PORT;
+
 const app = express();
-app.use(cors());
 app.use(express.json());
+app.use(cors());
 
 app.use("/products", productsRouter);
 app.use("/users", usersRouter);
@@ -25,6 +25,7 @@ app.use("/cart", cartRouter);
 app.use('/orders', orderRouter);
 app.use('/uploads', express.static('uploads'));
 
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, async () => {
   console.log(`Server is running on port ${PORT}`);
