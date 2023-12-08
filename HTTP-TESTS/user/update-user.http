@@ -1,0 +1,12 @@
+PUT http://localhost:5000/users/656db8c9a6f6e646a53a91f8 
+Content-Type: application/json
+
+{
+      "fullName": "Mohamed Naderrrrr",
+      "phoneNumber": "+1122113344",
+      "city": "Cairo",
+      "address": "Giza Haram",
+      "isAdmin": false,
+      "isDesigner": true
+}
+      

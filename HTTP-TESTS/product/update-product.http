@@ -1,0 +1,8 @@
+PUT http://localhost:5000/products/656d947a70a74aa64fa669fc 
+Content-Type: application/json
+
+{
+     "status": "approved"
+ }
+
+      

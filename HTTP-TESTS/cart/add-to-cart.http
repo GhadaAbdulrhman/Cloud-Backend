@@ -1,0 +1,10 @@
+POST http://localhost:5000/cart/656db411b7725c99a7bc5fe5/add
+Content-Type: application/json
+
+{
+  "productId": "656df6296be5e6268cda274c",
+  "quantity": 1,
+  "color" : "red",
+  "text" : "Hello",
+  "design" : "chrome"
+}
