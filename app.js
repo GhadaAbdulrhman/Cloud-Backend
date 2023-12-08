@@ -1,5 +1,4 @@
 const express = require("express");
-const dotenv = require("dotenv");
 const cors = require("cors");
 
 const productsRouter = require("./routes/products");
@@ -9,9 +8,8 @@ const cartRouter = require("./routes/cart");
 const orderRouter = require('./routes/orders');
 
 const initiateDBConnection = require("./config/db");
-dotenv.config({
-  path: "./config/.env",
-});
+
+
 
 
 const app = express();
