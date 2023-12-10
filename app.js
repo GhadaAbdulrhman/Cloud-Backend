@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
   res.send('Deployment Test!');
 });
 
-app.listen("PORT", async () => {
+app.listen(PORT, async () => {
   console.log(`Server is running on port ${PORT}`);
 
   await initiateDBConnection();
