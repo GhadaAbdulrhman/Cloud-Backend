@@ -2,12 +2,12 @@ POST http://localhost:5000/auth/signup
 Content-Type: application/json
 
 {
-  "fullName": "Mohamed Nader",
-  "email": "Mohamed.designer@example.com",
-  "password": "mohamed123",
+  "fullName": "Ghada Abdulrhman",
+  "email": "ghada.admin@example.com",
+  "password": "ghada123",
   "phoneNumber": "+1122113344",
   "city": "Cairo",
-  "address": "Giza Haram",
-  "isAdmin": false,
-  "isDesigner": true
+  "address": "Masr El Gdyda",
+  "isAdmin": true,
+  "isDesigner": false
 }

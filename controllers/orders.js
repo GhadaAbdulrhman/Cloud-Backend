@@ -2,8 +2,8 @@ const orderService = require('../services/orders');
 
 module.exports.createOrder = async (req, res) => {
   const orderInfo = {
-    user: req.body.userId, // Assuming userId is sent in the request body
-    products: req.body.products, // Assuming products are sent as an array of product IDs
+    user: req.body.userId, 
+    products: req.body.products, 
     amount: req.body.amount,
     billingAddress: req.body.billingAddress,
   };

@@ -56,7 +56,7 @@ module.exports.removeFromCart = async (userId, productId) => {
       throw new Error('Cart not found');
     }
 
-    const updatedProducts = cart.products.filter((item) => !item.productId.equals(productId));
+    const updatedProducts = cart.products.filter((item) => !item._id.equals(productId));
     cart.products = updatedProducts;
 
     // Save the updated cart
